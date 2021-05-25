@@ -3,6 +3,8 @@ const validator = require('validator');
 
 // persiapan untuk yang mau dikirim nanti
 const User = mongoose.model('User', {
+    //buat class User menggunakan fungsi mongoose
+    // const KelasBaru = mongoose.model("nama_kelas", {isinya})
     name: {
         type: String,
         required: true,
