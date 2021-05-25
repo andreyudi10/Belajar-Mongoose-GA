@@ -3,6 +3,9 @@ const { findById } = require('../models/task');
 // di model task ga ada export findById tapi kok bisa dipanggil??
 const Task = require('../models/task');
 const router = new express.Router();
+// bikin anakan dari blueprint kelas express.Router
+// yak kebanyakan sudah saya tulis di user
+// tambahan ini
 
 router.post('/tasks', async (req, res) => {
     const task = new Task(req.body);
