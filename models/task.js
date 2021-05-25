@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+// gak ada findById tapi kok bisa task.js import findById dari sini ya
+// sedangkan model.js pakek findById tapi gak perlu import
 
 const Task = mongoose.model('Task', {
     description: {
