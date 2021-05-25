@@ -1,9 +1,13 @@
 const express = require('express');
 const User = require('../models/user');
+// ambil kelas user
 const router = new express.Router();
+// ini bikin dari blueprint kelas express.Router()
+//mirip denga react-router-dom di react
 
 router.post('/users', async (req, res) => {
     const user = new User(req.body);
+    //bikin blueprint dari skema user lalu dia kirim user
     try {
         await user.save();
         res.status(201).send(user);
